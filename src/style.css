@@ -1,0 +1,431 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+.auth-buttons a {
+  margin-left: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.login {
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.signup {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-image {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+/* Why Join */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.feature img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Events & News */
+.event-cards, .news-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.event, .news-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event img, .news-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #007bff;
+  color: #fff;
+  padding: 3rem 5%;
+}
+
+.testimonials img {
+  width: 450px;
+  border-radius: 20%;
+  margin-bottom: 1rem;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+/* Highlight active nav link */
+.nav-links .active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* About Page */
+.about {
+  text-align: center;
+  padding: 4rem 5%;
+}
+
+.about h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.about img { 
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* Highlight active nav link */
+.nav-links .active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Events Page */
+.events {
+  text-align: center;
+  padding: 4rem 5%;
+}
+
+.events h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.event-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.event {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.event:hover {
+  transform: translateY(-5px);
+}
+
+.event img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+.event p {
+  font-weight: 500;
+  color: #007bff;
+}
+
+
+/* Highlight active nav link */
+.nav-links .active {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Resources Page */
+.resources {
+  text-align: center;
+  padding: 4rem 5%;
+}
+
+.resources h2 {
+  color: #007bff;
+  margin-bottom: 2rem;
+}
+
+.resource-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.resource {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.resource:hover {
+  transform: translateY(-5px);
+}
+
+.resource img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.resource p {
+  font-weight: 500;
+  color: #007bff;
+}
+
+
+/* Contact Banner */
+.contact-banner img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+}
+
+/* Contact Page */
+.contact {
+  text-align: center;
+  padding: 4rem 5%;
+}
+
+.contact h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: left;
+  max-width: 300px;
+}
+
+.contact-info img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
